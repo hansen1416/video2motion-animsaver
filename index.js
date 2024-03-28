@@ -31,7 +31,7 @@ app.post('/', (req, res) => {
     // console.log('Received animation data:', animData);
     // save animData to a local file
 
-    fs.writeFileSync(path.join('data', animName + '.json'), JSON.stringify(animData, null, 2));
+    fs.writeFileSync(path.join("C:\\", "Users", "105476", 'Documents', 'video2motion-animplayer', 'public', 'anim-euler-uniform', animName + '.json'), JSON.stringify(animData, null, 2));
 
     res.json({
         message: `Saved animation data to ${animName}.json`
